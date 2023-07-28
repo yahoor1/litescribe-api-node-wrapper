@@ -12,7 +12,7 @@ import { getTokenSummary } from './ltc20/tokenSummary/getTokenSummary';
 import { getTransferableList } from './ltc20/transferable-list/getTransferableList';
 import { getTransaction } from './ltc20/transaction/getTransaction';
 
-const litescribeAPI = {
+export {
   getAddressBalance,
   getListOfSpendableUtxos,
   getMultiAssets,
@@ -24,6 +24,4 @@ const litescribeAPI = {
   getTokenSummary,
   getTransferableList,
   getTransaction
-} as const;
-
-export default litescribeAPI;
+}
