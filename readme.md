@@ -28,7 +28,31 @@ yarn add litescribe-api
 ## Usage example
 
 ```javascript
-import litescribeAPI from 'litescribe-api';
+import {
+  getAddressBalance,
+  getListOfSpendableUtxos,
+  getMultiAssets,
+  getInscriptions,
+  searchByDomainName,
+  getInscriptionOutput,
+  getInscriptionDetailOutput,
+  getLtc20Tokens,
+  getTokenSummary,
+  getTransferableList,
+  getTransaction
+} from 'litescribe-api';
+```
+
+or 
+
+```javascript
+import api from 'litescribe-api';
+```
+
+or 
+
+```javascript
+const api = require('litescribe-api');
 ```
 
 ## Contributing
@@ -44,6 +68,8 @@ Contributions are welcome! If you find a bug or have an enhancement in mind, ple
 This project is licensed under the ISC License.
 
 ### License
+
+ISC License
 
 Copyright (c) 2023, Jan Osio
 
