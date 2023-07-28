@@ -1,6 +1,6 @@
 {
   "name": "litescribe-api",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Node/JS wrapper for litescribe.io API",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -9,7 +9,6 @@
   "scripts": {
     "build": "parcel build --no-cache",
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "publish": "npm run build && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jan Osio",
