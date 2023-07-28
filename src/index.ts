@@ -6,6 +6,7 @@ import { searchByDomainName } from './address/search/searchByDomainName';
 
 import { getInscriptionOutput } from './inscription/utxo/getInscriptionOutput';
 import { getInscriptionDetailOutput } from './inscription/utxo-detail/getInscriptionDetailOutput';
+import { getInscriptionsOutputs } from './inscription/utxos/getInscriptionsOutputs';
 
 import { getLtc20Tokens } from './ltc20/tokens/getLtc20Tokens';
 import { getTokenSummary } from './ltc20/tokenSummary/getTokenSummary';
@@ -20,6 +21,7 @@ export {
   searchByDomainName,
   getInscriptionOutput,
   getInscriptionDetailOutput,
+  getInscriptionsOutputs,
   getLtc20Tokens,
   getTokenSummary,
   getTransferableList,
