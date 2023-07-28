@@ -24,4 +24,4 @@ export {
   getTokenSummary,
   getTransferableList,
   getTransaction
-}
+};

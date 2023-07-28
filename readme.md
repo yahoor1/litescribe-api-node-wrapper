@@ -36,6 +36,7 @@ import {
   searchByDomainName,
   getInscriptionOutput,
   getInscriptionDetailOutput,
+  getInscriptionsOutputs,
   getLtc20Tokens,
   getTokenSummary,
   getTransferableList,
