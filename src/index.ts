@@ -13,6 +13,9 @@ import { getTokenSummary } from './ltc20/tokenSummary/getTokenSummary';
 import { getTransferableList } from './ltc20/transferable-list/getTransferableList';
 import { getTransaction } from './ltc20/transaction/getTransaction';
 
+import { getOrderStatus } from './order/status/getOrderStatus';
+import { createOrder } from './order/create/createOrder';
+
 export {
   getAddressBalance,
   getListOfSpendableUtxos,
@@ -25,5 +28,7 @@ export {
   getLtc20Tokens,
   getTokenSummary,
   getTransferableList,
-  getTransaction
+  getTransaction,
+  getOrderStatus,
+  createOrder,
 };

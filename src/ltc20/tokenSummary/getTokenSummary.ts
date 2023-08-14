@@ -8,7 +8,7 @@ import api from '../../api';
  */
 export const getTokenSummary = async (address: string, ticker: string) => {
   const uri = `/brc20/token-summary?address=${address}&ticker=${ticker}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

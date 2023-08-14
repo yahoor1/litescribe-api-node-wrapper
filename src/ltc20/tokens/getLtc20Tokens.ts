@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getLtc20Tokens = async (address: string) => {
   const uri = `/brc20/tokens?address=${address}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

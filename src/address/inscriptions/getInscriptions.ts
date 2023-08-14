@@ -13,7 +13,7 @@ export const getInscriptions = async (
   size: number = 20
 ) => {
   const uri = `/address/inscriptions?address=${address}&cursor=${page}&size=${size}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

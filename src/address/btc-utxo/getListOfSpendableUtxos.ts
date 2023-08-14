@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getListOfSpendableUtxos = async (address: string) => {
   const uri = `/address/btc-utxo?address=${address}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

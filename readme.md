@@ -40,7 +40,9 @@ import {
   getLtc20Tokens,
   getTokenSummary,
   getTransferableList,
-  getTransaction
+  getTransaction,
+  getOrderStatus,
+  createOrder,
 } from 'litescribe-api';
 ```
 

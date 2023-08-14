@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getMultiAssets = async (addresses: string[]) => {
   const uri = `/address/multi-assets?addresses=${addresses.toString()}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

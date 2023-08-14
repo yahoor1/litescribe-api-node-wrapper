@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getInscriptionsOutputs = async (inscriptionIds: string[]) => {
   const uri = `/inscription/utxos`;
-  const response = await api.post(uri, { inscriptionIds: inscriptionIds.toString() });
+  const { data } = await api.post(uri, { inscriptionIds: inscriptionIds.toString() });
 
-  return response.data;
+  return data;
 };

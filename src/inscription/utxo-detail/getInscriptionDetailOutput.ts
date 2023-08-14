@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getInscriptionDetailOutput = async (inscriptionId: string) => {
   const uri = `/inscription/utxo-detail?inscriptionId=${inscriptionId}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

@@ -7,7 +7,7 @@ import api from '../../api';
  */
 export const getTransaction = async (txId: string) => {
   const uri = `/brc20/transaction?txid=${txId}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };

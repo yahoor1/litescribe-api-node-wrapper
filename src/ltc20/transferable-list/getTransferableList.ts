@@ -8,7 +8,7 @@ import api from '../../api';
  */
 export const getTransferableList = async (address: string, ticker: string) => {
   const uri = `/brc20/transferable-list?address=${address}&ticker=${ticker}`;
-  const response = await api.get(uri);
+  const { data } = await api.get(uri);
 
-  return response.data;
+  return data;
 };
